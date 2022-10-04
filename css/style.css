@@ -172,13 +172,24 @@ header p {
     padding: 45px 0px;
 }
 
+.main-section .button a {
+    background-color: #7289DA;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 19px;
+}
+
 /* Footer */
 footer {
     min-height: 80px;
     background-color: #23272A;
     color: #fff;
-    padding: 15px 0;
     color: #7186D0;
+}
+
+footer .container {
+    padding: 60px 0 50px 0;
 }
 
 footer a {
@@ -186,42 +197,66 @@ footer a {
     color: #fff;
 }
 
-footer ul {
+.footer-links ul {
     list-style-type: none;
+    line-height: 35px;
 }
 
 .top-footer, .bottom-footer {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
 }
 
-.social-links {
-    width: 20%;
+.social-links h3 {
+    font-size: 30px;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
+}
+
+.top-footer {
+    padding-bottom: 30px;
 }
 
 .bottom-footer {
-    border-top: solid 1px #4C5984;
+    border-top: solid 2px #4C5984;
+    padding-top: 20px;
 }
 
-.button {
+.footer-links ul li:first-child {
+    font-weight: bold;
+}
+
+.bottom-footer .signin-button {
     height: 40px;
     line-height: 40px;
 }
 
-.button a {
+.bottom-footer .signin-button a {
     background-color: #7289DA;
     color: #fff;
     border-radius: 50px;
     padding: 10px;
+    font-size: 14px;
 }
 
 .lang {
+    margin: 15px 0;
     color: #fff;
+    height: 30px;
+    background-image: url('../img/ita.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-size: contain;
+    height: 16px;
+    font-size: 14px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 19px;
 }
