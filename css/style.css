@@ -10,7 +10,7 @@ body {
 
 /* Container */
 .container {
-    width: 80%;
+    width: 76%;
     margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ header p {
 /* Contenuto header */
 .main-header {
     text-align: center;
-    width: 58%;
+    width: 60%;
     margin: 0 auto;
     padding: 123px 0;
 }
@@ -109,19 +109,24 @@ header p {
 /* Sezioni - contenuto principale */
 .main-section > .container:not(.not-flex) {
     display: flex;
-    justify-content: center;
 }
 
 .main-section > .container.not-flex {
     text-align: center;
+    padding: 120px 0;
 }
 
 .main-section > .container {
-    padding: 120px 0;
+    padding: 120px 30px;
+}
+
+.main-section > .container.not-flex img {
+    width: 100%;
 }
 
 .main-section > .container p {
     font-size: 20px;
+    line-height: 29px;
 }
 
 .main-section > .container:not(.not-flex) p {
@@ -129,15 +134,17 @@ header p {
 }
 
 .main-section > .container.not-flex p {
-    padding: 15px 0;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 .main-section > .container:not(.not-flex) > .img-section {
-    width: 60%;
+    width: 65%;
 }
 
 .main-section > .container:not(.not-flex) > .text-section {
-    width: 40%;
+    width: 35%;
     padding-top: 30px;
 }
 
@@ -155,6 +162,14 @@ header p {
 
 .main-section h2 {
     font-size: 48px;
+}
+
+.main-section h3 {
+    font-size: 28px;
+    background-image: url('../img/stars.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 45px 0px;
 }
 
 /* Footer */
