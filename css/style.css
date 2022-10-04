@@ -132,11 +132,11 @@ header p {
 }
 
 .main-section > .container:not(.not-flex) > .img-section {
-    width: 63%;
+    width: 64%;
 }
 
 .main-section > .container:not(.not-flex) > .text-section {
-    width: 37%;
+    width: 36%;
     padding-top: 30px;
 }
 
