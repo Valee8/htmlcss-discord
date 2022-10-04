@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    min-height: 100px;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    color: #E4F4FE;
+    padding-top: 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+header a {
+    color: #E4F4FE;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+header p {
+    padding: 30px 0 20px;
+    line-height: 29px; 
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    height: 35px;
+}
+
+/* Link navbar */
+.header-links {
+    min-width: 42%;
+}
+
+.header-links ul {
+    display: flex;
+    list-style-type: none; 
+    justify-content: space-between;
+}
+
+
+/* Bottone accedi */
+.login-button a {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.login-button a {
+    color: #271E19;
+}
+
+/* Contenuto header */
+.main-header {
+    text-align: center;
+    width: 58%;
+    margin: 0 auto;
+    padding: 123px 0;
+}
+
+/* Bottoni parte centrale header */
+.header-buttons {
+    height: 39px; 
+    line-height: 39px;
+}
+
+.header-buttons a {
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 19px;
+    background-color: #fff; 
+    color: #271E19;
+}
+
+.header-buttons a:last-of-type {
+    background-color: #23272A; 
+    color: #fff;
+    margin-left: 15px;
+}
+
+.header-buttons a:first-of-type:before, .main-section .button a:before {
+    content: '\01F807';
+    padding: 0 2px;
+    vertical-align: middle;
+}
+
+/* Sezioni - contenuto principale */
+.main-section > .container:not(.not-flex) {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section > .container.not-flex {
+    text-align: center;
+}
+
+.main-section > .container {
+    padding: 10px;
+}
+
+.main-section > .container.not-flex p {
+    padding: 15px 0;
+}
+
+.main-section > .container:not(.not-flex) > div {
+    width: 50%;
+}
+
+.main-section:nth-child(even) > .container {
+    flex-direction: row-reverse;
+}
+
+.main-section:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+.main-section a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    min-height: 80px;
+    background-color: #23272A;
+    color: #fff;
+    padding: 15px 0;
+    color: #7186D0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.top-footer, .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.social-links {
+    width: 20%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.bottom-footer {
+    border-top: solid 1px #4C5984;
+}
+
+.button {
+    height: 40px;
+    line-height: 40px;
+}
+
+.button a {
+    background-color: #7289DA;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.lang {
+    color: #fff;
+}
