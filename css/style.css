@@ -118,8 +118,17 @@ header p {
     background-color: #F6F6F6;
 }
 
-.main-section > .container {
-    padding: 120px 10px;
+
+.main-section:nth-child(1) {
+    padding: 5% 0 10% 0;
+}
+
+.main-section {
+    padding: 10% 0;
+}
+
+.main-section:nth-child(4) {
+    padding: 5% 0;
 }
 
 .main-section > .container:not(.not-flex) {
@@ -128,7 +137,6 @@ header p {
 
 .main-section > .container.not-flex {
     text-align: center;
-    padding: 120px 0;
 }
 
 .main-section > .container:not(.not-flex) > .img-section {

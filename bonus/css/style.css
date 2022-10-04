@@ -126,28 +126,22 @@ header p {
     position: relative;
 }
 
-.main-section:nth-child(3) {
-    padding: 60px 0;
-}
-
-.main-section:nth-child(even)::before {
+/* Waves */
+.main-section:nth-child(even)::before, .main-section:nth-child(2)::after {
     content: '';
     background-image: url('../../img/wave.svg');
     width: 100%;
     background-repeat: no-repeat; 
     opacity: 0.04;
     position: absolute;
-    top: -80px;
-    height: 80px;
 } 
 
+.main-section:nth-child(even)::before {
+    top: -80px;
+    height: 80px;
+}
+
 .main-section:nth-child(2)::after {
-    content: '';
-    background-image: url('../../img/wave.svg');
-    width: 100%;
-    background-repeat: no-repeat; 
-    opacity: 0.04;
-    position: absolute;
     bottom: -80px;
     height: 80px;
     transform: rotateX(180deg);
@@ -170,9 +164,21 @@ header p {
     background-color: #F5F5F5;
 } 
 
-.main-section > .container {
-    padding: 120px 10px;
+.main-section:nth-child(1) {
+    padding: 5% 0 10% 0;
 }
+
+.main-section {
+    padding: 10% 0;
+}
+
+.main-section:nth-child(4) {
+    padding: 5% 0;
+}
+
+.main-section > .container {
+     padding: 0 10px; 
+} 
 
 .main-section > .container:not(.not-flex) {
     display: flex;
@@ -180,7 +186,6 @@ header p {
 
 .main-section > .container.not-flex {
     text-align: center;
-    padding: 120px 0;
 }
 
 .main-section > .container:not(.not-flex) > .img-section {
