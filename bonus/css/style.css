@@ -63,16 +63,22 @@ header p {
     min-width: 500px;
 }
 
+.header-links li a:hover {
+    color: #133279;
+}
+
 /* Bottone accedi */
 .login-button a {
     background-color: #fff;
     padding: 10px 15px;
     border-radius: 50px;
     font-size: 15px;
+    color: #271E19;
 }
 
-.login-button a {
-    color: #271E19;
+.login-button a:hover {
+    background-color: #2342A8;
+    color: #fff;
 }
 
 /* Contenuto header */
@@ -97,13 +103,57 @@ header p {
     color: #271E19;
 }
 
+.header-buttons a:hover {
+    background-color: #2342A8; 
+    color: #fff; 
+    box-shadow: 0 2px 2px #000;
+}
+
 .header-buttons a:last-of-type {
-    background-color: #23272A; 
+    background-color: #312F51; 
     color: #fff;
     margin-left: 15px;
 }
 
+.header-buttons a:last-of-type:hover {
+    color: #fff;
+    background-color: #1C1B29;
+    box-shadow: 0 2px 2px #312F51;
+}
+
 /* Sezioni - contenuto principale */
+.main-section {
+    position: relative;
+}
+
+.main-section:nth-child(3) {
+    padding: 60px 0;
+}
+
+.main-section:nth-child(even)::before {
+    content: '';
+    background-image: url('../../img/wave.svg');
+    width: 100%;
+    background-repeat: no-repeat; 
+    opacity: 0.04;
+    position: absolute;
+    top: -80px;
+    height: 80px;
+} 
+
+.main-section:nth-child(2)::after {
+    content: '';
+    background-image: url('../../img/wave.svg');
+    width: 100%;
+    background-repeat: no-repeat; 
+    opacity: 0.04;
+    position: absolute;
+    bottom: -80px;
+    height: 80px;
+    transform: rotateX(180deg);
+}  
+
+
 .main-section:nth-child(even) > .container {
     flex-direction: row-reverse;
 }
@@ -118,8 +168,8 @@ header p {
 }
 
 .main-section:nth-child(even) {
-    background-color: #F6F6F6;
-}
+    background-color: #F5F5F5;
+} 
 
 .main-section > .container {
     padding: 120px 10px;
@@ -192,6 +242,10 @@ header p {
     font-size: 19px;
 }
 
+.main-section .button a:hover {
+    background-color: #4D7AE8;
+}
+
 /* Footer */
 footer {
     background-color: #23272A;
@@ -244,6 +298,7 @@ footer a {
     font-size: 14px;
 }
 
+
 .top-footer .social-links a {
     margin-right: 15px;
     font-size: 19px;
@@ -251,6 +306,10 @@ footer a {
 
 .top-footer .social-links a:last-of-type {
     margin-right: 0;
+}
+
+.top-footer a:hover {
+    color: #C2D2FF;
 }
 
 .top-footer .footer-links {
@@ -275,4 +334,8 @@ footer a {
     border-radius: 50px;
     padding: 10px 13px;
     font-size: 14px;
+}
+
+.bottom-footer .signin-button a:hover {
+    background-color: #4D7AE8;
 }
