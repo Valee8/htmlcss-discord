@@ -19,7 +19,7 @@ header {
     background-image: url('../../img/jumbo.png');
     background-position: left 40px; 
     background-repeat: no-repeat;
-    background-size: 101% 99%;
+    background-size: cover;
     background-color: #255EE9;
     color: #E4F4FE;
 }
@@ -56,18 +56,11 @@ header p {
     vertical-align: middle;
 }
 
-.header-links li a:hover {
-    color: #151424;
-}
-
-.header-links {
-    min-width: 42%;
-}
-
 .header-links ul {
     display: flex; 
     justify-content: space-between;
     list-style-type: none;
+    min-width: 500px;
 }
 
 /* Bottone accedi */
@@ -87,12 +80,12 @@ header p {
     text-align: center;
     width: 67%;
     margin: 0 auto;
-    padding: 11% 0;
+    padding: 11% 0; 
 }
 
 /* Bottoni parte centrale header */
 .header-buttons {
-    height: 50px; 
+    min-height: 50px; 
     line-height: 50px;
 }
 
@@ -110,17 +103,18 @@ header p {
     margin-left: 15px;
 }
 
-/* Freccia bottoni header e main */
-.header-buttons a:first-of-type:before, .main-section .button a:before {
-    content: '\01F807';
-    padding: 0 2px;
-    vertical-align: middle;
-    font-size: 25px;
-}
-
 /* Sezioni - contenuto principale */
 .main-section:nth-child(even) > .container {
     flex-direction: row-reverse;
+}
+
+.main-section img {
+    max-width: 100%;
+}
+
+.main-section:nth-child(2) .img-section img {
+    display: block; 
+    margin-left: auto;
 }
 
 .main-section:nth-child(even) {
@@ -200,7 +194,6 @@ header p {
 
 /* Footer */
 footer {
-    min-height: 80px;
     background-color: #23272A;
     color: #fff;
     color: #7186D0;

@@ -103,14 +103,6 @@ header p {
     margin-left: 15px;
 }
 
-/* Freccia bottoni header e main */
-.header-buttons a:first-of-type:before, .main-section .button a:before {
-    content: '\01F807';
-    padding: 0 2px;
-    vertical-align: middle;
-    font-size: 25px;
-}
-
 /* Sezioni - contenuto principale */
 .main-section:nth-child(even) > .container {
     flex-direction: row-reverse;
