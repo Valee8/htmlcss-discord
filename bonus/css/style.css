@@ -130,20 +130,19 @@ header p {
 .main-section:nth-child(even)::before, .main-section:nth-child(2)::after {
     content: '';
     background-image: url('../../img/wave.svg');
-    width: 100%;
     background-repeat: no-repeat; 
+    width: 100%;
     opacity: 0.04;
+    height: 80px;
     position: absolute;
 } 
 
 .main-section:nth-child(even)::before {
     top: -80px;
-    height: 80px;
 }
 
 .main-section:nth-child(2)::after {
     bottom: -80px;
-    height: 80px;
     transform: rotateX(180deg);
 }  
 
