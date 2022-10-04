@@ -16,10 +16,10 @@ body {
 
 /* Header */
 header {
-    background-image: url('../img/jumbo.png');
+    background-image: url('../../img/jumbo.png');
     background-position: left 40px; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 101% 99%;
     background-color: #255EE9;
     color: #E4F4FE;
 }
@@ -56,6 +56,10 @@ header p {
     vertical-align: middle;
 }
 
+.header-links li a:hover {
+    color: #151424;
+}
+
 .header-links {
     min-width: 42%;
 }
@@ -83,7 +87,7 @@ header p {
     text-align: center;
     width: 67%;
     margin: 0 auto;
-    padding: 11% 0; 
+    padding: 11% 0;
 }
 
 /* Bottoni parte centrale header */
@@ -117,15 +121,6 @@ header p {
 /* Sezioni - contenuto principale */
 .main-section:nth-child(even) > .container {
     flex-direction: row-reverse;
-}
-
-.main-section img {
-    max-width: 100%;
-}
-
-.main-section:nth-child(2) .img-section img {
-    display: block; 
-    margin-left: auto;
 }
 
 .main-section:nth-child(even) {
@@ -182,7 +177,7 @@ header p {
 /* h3 sezione 4 */
 .main-section h3 {
     font-size: 29px;
-    background-image: url('../img/stars.svg');
+    background-image: url('../../img/stars.svg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -205,6 +200,7 @@ header p {
 
 /* Footer */
 footer {
+    min-height: 80px;
     background-color: #23272A;
     color: #fff;
     color: #7186D0;
@@ -246,7 +242,7 @@ footer a {
     margin: 15px 0;
     color: #fff;
     height: 30px;
-    background-image: url('../img/ita.png');
+    background-image: url('../../img/ita.png');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
