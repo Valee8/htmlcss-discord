@@ -17,14 +17,17 @@ body {
 /* Header */
 header {
     background-image: url('../img/jumbo.png');
-    background-size: cover;
+    background-position: center 40px; 
+    background-repeat: no-repeat;
+    background-color: #255EE9;
+    background-size: 100%;
     color: #E4F4FE;
 }
 
 /* Titolo header */
 header h1 {
     color: #fff;
-    font-size: 45px;
+    font-size: 48px;
 }
 
 /* Scritte link header */
@@ -37,7 +40,7 @@ header a {
 header p {
     padding: 30px 0 20px 0;
     line-height: 29px; 
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Navbar */
@@ -78,9 +81,9 @@ header p {
 /* Contenuto header */
 .main-header {
     text-align: center;
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-    padding: 112px 0;
+    padding: 130px 0;
 }
 
 /* Bottoni parte centrale header */
@@ -92,7 +95,7 @@ header p {
 .header-buttons a {
     padding: 15px;
     border-radius: 50px;
-    font-size: 19px;
+    font-size: 21px;
     background-color: #fff; 
     color: #271E19;
 }
@@ -108,6 +111,7 @@ header p {
     content: '\01F807';
     padding: 0 2px;
     vertical-align: middle;
+    font-size: 25px;
 }
 
 /* Sezioni - contenuto principale */
@@ -168,11 +172,12 @@ header p {
 
 /* h3 sezione 4 */
 .main-section h3 {
-    font-size: 28px;
+    font-size: 29px;
     background-image: url('../img/stars.svg');
     background-position: top center;
     background-repeat: no-repeat;
-    padding: 45px 0px;
+    background-size: 50%;
+    padding: 40px 0px;
 }
 
 /* Bottone main - sezione 4 */
@@ -236,8 +241,8 @@ footer a {
     background-image: url('../img/ita.png');
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 30px;
     background-size: contain;
+    padding-left: 30px;
     height: 16px;
     font-size: 14px;
 }
@@ -245,6 +250,10 @@ footer a {
 .top-footer .social-links a {
     margin-right: 15px;
     font-size: 19px;
+}
+
+.top-footer .social-links a:last-of-type {
+    margin-right: 0;
 }
 
 .top-footer .footer-links {
@@ -267,6 +276,6 @@ footer a {
     background-color: #7289DA;
     color: #fff;
     border-radius: 50px;
-    padding: 10px;
+    padding: 10px 13px;
     font-size: 14px;
 }
