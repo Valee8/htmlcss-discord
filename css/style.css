@@ -58,9 +58,9 @@ header p {
 }
 
 .header-links ul {
-    display: flex;
-    list-style-type: none; 
+    display: flex; 
     justify-content: space-between;
+    list-style-type: none;
 }
 
 /* Bottone accedi */
@@ -148,16 +148,12 @@ header p {
 .main-section > .container p {
     font-size: 20px;
     line-height: 29px;
-}
-
-.main-section > .container:not(.not-flex) p {
     padding-top: 30px;
 }
 
 .main-section > .container.not-flex p {
     width: 88%;
     margin: 0 auto;
-    padding-top: 30px;
 }
 
 /* Scritte link main */
@@ -180,6 +176,11 @@ header p {
 }
 
 /* Bottone main - sezione 4 */
+.main-section .button {
+    height: 50px;
+    line-height: 50px;
+}
+
 .main-section .button a {
     background-color: #7289DA;
     color: #fff;
