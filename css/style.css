@@ -16,26 +16,26 @@ body {
 
 /* Header */
 header {
-    min-height: 100px;
     background-image: url('../img/jumbo.png');
     background-size: cover;
     color: #E4F4FE;
-    padding-top: 20px;
 }
 
+/* Titolo header */
 header h1 {
     color: #fff;
     font-size: 45px;
 }
 
+/* Scritte link header */
 header a {
     color: #E4F4FE;
     text-decoration: none;
-    vertical-align: middle;
 }
 
+/* Paragrafo header */
 header p {
-    padding: 30px 0 20px;
+    padding: 30px 0 20px 0;
     line-height: 29px; 
     font-size: 18px;
 }
@@ -44,11 +44,15 @@ header p {
 .navbar {
     display: flex;
     justify-content: space-between;
-    line-height: 35px;
-    height: 35px;
+    line-height: 36px;
+    padding-top: 20px;
 }
 
 /* Link navbar */
+.navbar a {
+    vertical-align: middle;
+}
+
 .header-links {
     min-width: 42%;
 }
@@ -58,7 +62,6 @@ header p {
     list-style-type: none; 
     justify-content: space-between;
 }
-
 
 /* Bottone accedi */
 .login-button a {
@@ -77,13 +80,13 @@ header p {
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    padding: 123px 0;
+    padding: 112px 0;
 }
 
 /* Bottoni parte centrale header */
 .header-buttons {
-    height: 39px; 
-    line-height: 39px;
+    height: 50px; 
+    line-height: 50px;
 }
 
 .header-buttons a {
@@ -100,6 +103,7 @@ header p {
     margin-left: 15px;
 }
 
+/* Freccia bottoni header e main */
 .header-buttons a:first-of-type:before, .main-section .button a:before {
     content: '\01F807';
     padding: 0 2px;
@@ -107,6 +111,18 @@ header p {
 }
 
 /* Sezioni - contenuto principale */
+.main-section:nth-child(even) > .container {
+    flex-direction: row-reverse;
+}
+
+.main-section:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+.main-section > .container {
+    padding: 120px 10px;
+}
+
 .main-section > .container:not(.not-flex) {
     display: flex;
 }
@@ -116,8 +132,13 @@ header p {
     padding: 120px 0;
 }
 
-.main-section > .container {
-    padding: 120px 30px;
+.main-section > .container:not(.not-flex) > .img-section {
+    width: 63%;
+}
+
+.main-section > .container:not(.not-flex) > .text-section {
+    width: 37%;
+    padding-top: 30px;
 }
 
 .main-section > .container.not-flex img {
@@ -139,31 +160,17 @@ header p {
     padding-top: 30px;
 }
 
-.main-section > .container:not(.not-flex) > .img-section {
-    width: 65%;
-}
-
-.main-section > .container:not(.not-flex) > .text-section {
-    width: 35%;
-    padding-top: 30px;
-}
-
-.main-section:nth-child(even) > .container {
-    flex-direction: row-reverse;
-}
-
-.main-section:nth-child(even) {
-    background-color: #F6F6F6;
-}
-
+/* Scritte link main */
 .main-section a {
     text-decoration: none;
 }
 
+/* Titoli main */
 .main-section h2 {
     font-size: 48px;
 }
 
+/* h3 sezione 4 */
 .main-section h3 {
     font-size: 28px;
     background-image: url('../img/stars.svg');
@@ -172,6 +179,7 @@ header p {
     padding: 45px 0px;
 }
 
+/* Bottone main - sezione 4 */
 .main-section .button a {
     background-color: #7289DA;
     color: #fff;
@@ -197,9 +205,17 @@ footer a {
     color: #fff;
 }
 
+.top-footer {
+    padding-bottom: 30px;
+}
+
 .footer-links ul {
     list-style-type: none;
     line-height: 35px;
+}
+
+.footer-links ul li:first-child {
+    font-weight: bold;
 }
 
 .top-footer, .bottom-footer {
@@ -207,42 +223,11 @@ footer a {
     justify-content: space-between;
 }
 
-.social-links h3 {
+.top-footer .social-links h3 {
     font-size: 30px;
 }
 
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-}
-
-.top-footer {
-    padding-bottom: 30px;
-}
-
-.bottom-footer {
-    border-top: solid 2px #4C5984;
-    padding-top: 20px;
-}
-
-.footer-links ul li:first-child {
-    font-weight: bold;
-}
-
-.bottom-footer .signin-button {
-    height: 40px;
-    line-height: 40px;
-}
-
-.bottom-footer .signin-button a {
-    background-color: #7289DA;
-    color: #fff;
-    border-radius: 50px;
-    padding: 10px;
-    font-size: 14px;
-}
-
+/* Scritta italiano */
 .lang {
     margin: 15px 0;
     color: #fff;
@@ -256,7 +241,31 @@ footer a {
     font-size: 14px;
 }
 
-.social-links a {
+.top-footer .social-links a {
     margin-right: 15px;
     font-size: 19px;
+}
+
+.top-footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.bottom-footer {
+    border-top: solid 2px #4C5984;
+    padding-top: 20px;
+}
+
+.bottom-footer .signin-button {
+    height: 40px;
+    line-height: 40px;
+}
+
+.bottom-footer .signin-button a {
+    background-color: #7289DA;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 14px;
 }
