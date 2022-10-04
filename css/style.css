@@ -56,14 +56,11 @@ header p {
     vertical-align: middle;
 }
 
-.header-links {
-    min-width: 42%;
-}
-
 .header-links ul {
     display: flex; 
     justify-content: space-between;
     list-style-type: none;
+    min-width: 500px;
 }
 
 /* Bottone accedi */
@@ -88,7 +85,7 @@ header p {
 
 /* Bottoni parte centrale header */
 .header-buttons {
-    height: 50px; 
+    min-height: 50px; 
     line-height: 50px;
 }
 
