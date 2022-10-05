@@ -49,6 +49,7 @@ header p {
     justify-content: space-between;
     line-height: 36px;
     padding-top: 20px;
+    min-width: 76%;
 }
 
 /* Link navbar */
@@ -56,11 +57,18 @@ header p {
     vertical-align: middle;
 }
 
+.header-links {
+    min-width: 50%;
+} 
+
 .header-links ul {
     display: flex; 
     justify-content: space-between;
     list-style-type: none;
-    min-width: 500px;
+}
+
+.header-links li {
+    flex-wrap: wrap;
 }
 
 .header-links li a:hover {
@@ -252,7 +260,6 @@ header p {
 /* Footer */
 footer {
     background-color: #23272A;
-    color: #fff;
     color: #7186D0;
 }
 
